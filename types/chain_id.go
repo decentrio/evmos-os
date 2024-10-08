@@ -17,7 +17,7 @@ var (
 	regexEIP155          = `[1-9][0-9]*`
 	regexEpochSeparator  = `-{1}`
 	regexEpoch           = `[1-9][0-9]*`
-	evmosChainID         = regexp.MustCompile(fmt.Sprintf(`^(%s)%s(%s)%s(%s)$`,
+	evmosChainID         = regexp.MustCompile(fmt.Sprintf(`^(%s)%s(%s)(?:%s(%s))?$`,
 		regexChainID,
 		regexEIP155Separator,
 		regexEIP155,
