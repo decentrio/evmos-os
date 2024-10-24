@@ -67,10 +67,10 @@ func (m *EthAccount) XXX_DiscardUnknown() {
 var xxx_messageInfo_EthAccount proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*EthAccount)(nil), "os.types.v1.EthAccount")
+	proto.RegisterType((*EthAccount)(nil), "ethermint.types.v1.EthAccount")
 }
 
-func init() { proto.RegisterFile("os/types/v1/account.proto", fileDescriptor_a9a01693a243776e) }
+func init() { proto.RegisterFile("ethermint/types/v1/account.proto", fileDescriptor_a9a01693a243776e) }
 
 var fileDescriptor_a9a01693a243776e = []byte{
 	// 308 bytes of a gzipped FileDescriptorProto
