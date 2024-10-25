@@ -34,6 +34,9 @@ func (k *Keeper) GetPrecompileInstance(
 		}, found, nil
 	}
 
+	if k.erc20Keeper == nil {
+		return nil, false, nil
+	}
 	// Get the precompile from the dynamic precompiles
 	precompile, found, err := k.erc20Keeper.GetERC20PrecompileInstance(ctx, address)
 	if err != nil || !found {
